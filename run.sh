@@ -8,6 +8,6 @@ mkdir output
 
 for tileSize in 32 64 96 128; do
     # Run the matrix multiplication code with transformed loops and measure L1 data movements
-    likwid-perfctr -C 0-3 -g CACHE -m ./matmul 1024 $tileSize > output/output_${tileSize}.txt
+    likwid-perfctr -C 0-3 -g ICACHE -m ./matmul 1024 $tileSize > output/output_${tileSize}.txt
 done
 
