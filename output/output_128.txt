@@ -1,0 +1,40 @@
+--------------------------------------------------------------------------------
+CPU name:	AMD Ryzen 7 5800H with Radeon Graphics         
+CPU type:	AMD K19 (Zen3) architecture
+CPU clock:	3.19 GHz
+--------------------------------------------------------------------------------
+C[0][0] = 257.255646
+--------------------------------------------------------------------------------
+Region matrix_multiplication, Group 1: CACHE
++-------------------+------------+
+|    Region Info    | HWThread 0 |
++-------------------+------------+
+| RDTSC Runtime [s] |   3.022237 |
+|     call count    |          1 |
++-------------------+------------+
+
++------------------------+---------+-------------+
+|          Event         | Counter |  HWThread 0 |
++------------------------+---------+-------------+
+|    ACTUAL_CPU_CLOCK    |  FIXC1  | 13423490000 |
+|      MAX_CPU_CLOCK     |  FIXC2  |  9652859000 |
+|  RETIRED_INSTRUCTIONS  |   PMC0  |  6058779000 |
+|   CPU_CLOCKS_UNHALTED  |   PMC1  | 12970290000 |
+|   DATA_CACHE_ACCESSES  |   PMC2  |  1387706000 |
+| DATA_CACHE_REFILLS_ALL |   PMC3  |  1083073000 |
++------------------------+---------+-------------+
+
++-------------------------+------------+
+|          Metric         | HWThread 0 |
++-------------------------+------------+
+|   Runtime (RDTSC) [s]   |     3.0222 |
+|   Runtime unhalted [s]  |     4.2029 |
+|       Clock [MHz]       |  4441.4338 |
+|           CPI           |     2.1407 |
+|   data cache requests   | 1387706000 |
+| data cache request rate |     0.2290 |
+|    data cache misses    | 1083073000 |
+|   data cache miss rate  |     0.1788 |
+|  data cache miss ratio  |     0.7805 |
++-------------------------+------------+
+
