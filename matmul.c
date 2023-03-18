@@ -28,8 +28,8 @@ void matmul(int N, int *A, int *B, int *C, int *tileSizes) {
                     }
                 }
                 tile_counter++;
-                printf("\rProgress: %d/%d (%d%%)", tile_counter, total_tiles, tile_counter * 100 / total_tiles);
-                fflush(stdout);
+                // printf("\rProgress: %d/%d (%d%%)", tile_counter, total_tiles, tile_counter * 100 / total_tiles);
+                // fflush(stdout);
             }
         }
     }
