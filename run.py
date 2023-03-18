@@ -2,9 +2,9 @@
 
 import subprocess as sp
 
-arg1 = "4096"
+matSize = "4096"
 command_base = "likwid-perfctr -g L2 "
-command_thread = f" -m ./matmul {arg1} "
+command_thread = f" -m ./matmul {matSize} "
 command = ""
 out_prefix = "output_"
 
@@ -20,15 +20,16 @@ with open("para.txt", "r") as file:
         if len(args) == 8:
             counter = 0
             for tile in args:
-                command = command_base + f"-C {counter}" + command_thread + tile
-                command += f" > output/report_{tile}.txt"
+                i, j, k = tile.split()
+                command += command_base + f"-C {counter}" + command_thread + tile
+                command += f" > output/report_{i}_{j}_{k}.txt &"
                 counter += 2
 
             # sp.run(command, shell=True)
             print(command)
 
             args = []
-            command = command_base  
+            command = ""
             counter = 0
 
     if len(args) > 0: 

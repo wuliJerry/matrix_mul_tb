@@ -51,12 +51,14 @@ int main(int argc, char **argv) {
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
             A[i * N + j] = (int)rand() / RAND_MAX;
+            printf("%d ", A[i * N + j]);
             B[i * N + j] = (int)rand() / RAND_MAX;
+            printf("%d ", B[i * N + j]);
         }
     }
 
     // Perform matrix multiplication with loop transformation and tile size optimization
-    matmul(N, A, B, C, tileSize);
+    //matmul(N, A, B, C, tileSize);
 
     // Print result
     printf("C[0][0] = %d\n", C[0]);
