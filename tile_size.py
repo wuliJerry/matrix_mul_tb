@@ -1,4 +1,4 @@
-matrix_size = 4096
+matrix_size = 8192
 cache_size = 512*1024
 factors = [factor for factor in range(1, matrix_size+1) if matrix_size % factor == 0]
 
