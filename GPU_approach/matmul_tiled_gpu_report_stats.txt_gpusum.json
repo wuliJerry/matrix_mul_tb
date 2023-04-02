@@ -1,0 +1,86 @@
+[
+  {
+    "Time (%)": 52.2,
+    "Total Time (ns)": 2267177151,
+    "Instances": 393216,
+    "Avg (ns)": 5765.7,
+    "Med (ns)": 4544.0,
+    "Min (ns)": 3136,
+    "Max (ns)": 39904,
+    "StdDev (ns)": 2435.8,
+    "Category": "CUDA_KERNEL",
+    "Operation": "void at::native::elementwise_kernel<(int)128, (int)4, void at::native::gpu_kernel_impl<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 7)]::operator ()() const::[lambda(float) (instance 1)]>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 2)]>(int, T3)"
+  },
+  {
+    "Time (%)": 26.9,
+    "Total Time (ns)": 1166097021,
+    "Instances": 131072,
+    "Avg (ns)": 8896.6,
+    "Med (ns)": 8896.0,
+    "Min (ns)": 8768,
+    "Max (ns)": 39489,
+    "StdDev (ns)": 341.5,
+    "Category": "CUDA_KERNEL",
+    "Operation": "ampere_sgemm_32x32_sliced1x4_nn"
+  },
+  {
+    "Time (%)": 9.4,
+    "Total Time (ns)": 409316227,
+    "Instances": 131072,
+    "Avg (ns)": 3122.8,
+    "Med (ns)": 3104.0,
+    "Min (ns)": 3072,
+    "Max (ns)": 16640,
+    "StdDev (ns)": 132.5,
+    "Category": "CUDA_KERNEL",
+    "Operation": "void at::native::elementwise_kernel<(int)128, (int)4, void at::native::gpu_kernel_impl<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase &)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 3)]::operator ()() const::[lambda(int) (instance 1)]>(at::TensorIteratorBase &, const T1 &)::[lambda(int) (instance 2)]>(int, T3)"
+  },
+  {
+    "Time (%)": 7.0,
+    "Total Time (ns)": 304874308,
+    "Instances": 131072,
+    "Avg (ns)": 2326.0,
+    "Med (ns)": 2336.0,
+    "Min (ns)": 2176,
+    "Max (ns)": 13216,
+    "StdDev (ns)": 137.0,
+    "Category": "CUDA_KERNEL",
+    "Operation": "void splitKreduce_kernel<(int)32, (int)16, int, float, float, float, float, (bool)1, (bool)0, (bool)0>(cublasSplitKParams<T6>, const T4 *, const T5 *, T5 *, const T6 *, const T6 *, const T7 *, const T4 *, T7 *, void *, long, T6 *, int *)"
+  },
+  {
+    "Time (%)": 4.4,
+    "Total Time (ns)": 188841484,
+    "Instances": 131072,
+    "Avg (ns)": 1440.7,
+    "Med (ns)": 1440.0,
+    "Min (ns)": 1376,
+    "Max (ns)": 8960,
+    "StdDev (ns)": 89.2,
+    "Category": "CUDA_KERNEL",
+    "Operation": "void at::native::vectorized_elementwise_kernel<(int)4, at::native::CUDAFunctor_add<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)"
+  },
+  {
+    "Time (%)": 0.0,
+    "Total Time (ns)": 1954902,
+    "Instances": 2,
+    "Avg (ns)": 977451.0,
+    "Med (ns)": 977451.0,
+    "Min (ns)": 977164,
+    "Max (ns)": 977738,
+    "StdDev (ns)": 405.9,
+    "Category": "CUDA_KERNEL",
+    "Operation": "void at::native::<unnamed>::distribution_elementwise_grid_stride_kernel<unsigned int, (int)4, void at::native::templates::cuda::random_from_to_kernel<at::CUDAGeneratorImpl *>(at::TensorIteratorBase &, unsigned long, long, T1)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 3)]::operator ()() const::[lambda(curandStatePhilox4_32_10 *) (instance 2)], void at::native::<unnamed>::distribution_nullary_kernel<int, unsigned int, (int)4, at::CUDAGeneratorImpl *, void at::native::templates::cuda::random_from_to_kernel<at::CUDAGeneratorImpl *>(at::TensorIteratorBase &, unsigned long, long, T1)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 3)]::operator ()() const::[lambda(curandStatePhilox4_32_10 *) (instance 2)], void at::native::templates::cuda::random_from_to_kernel<at::CUDAGeneratorImpl *>(at::TensorIteratorBase &, unsigned long, long, T1)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 3)]::operator ()() const::[lambda(unsigned int) (instance 1)]>(at::TensorIteratorBase &, T4, const T5 &, T6)::[lambda(int, unsigned int) (instance 1)]>(int, at::PhiloxCudaState, T3, T4)"
+  },
+  {
+    "Time (%)": 0.0,
+    "Total Time (ns)": 850761,
+    "Instances": 1,
+    "Avg (ns)": 850761.0,
+    "Med (ns)": 850761.0,
+    "Min (ns)": 850761,
+    "Max (ns)": 850761,
+    "StdDev (ns)": 0.0,
+    "Category": "CUDA_KERNEL",
+    "Operation": "void at::native::vectorized_elementwise_kernel<(int)4, at::native::FillFunctor<int>, at::detail::Array<char *, (int)1>>(int, T2, T3)"
+  }
+]

@@ -1,6 +1,9 @@
+
 #!/usr/bin/python3
 
 import torch
+import torch.cuda.profiler as profiler
+
 
 def matmul_tiled(N, A, B, C, tileSizes):
     for i in range(0, N, tileSizes[0]):
@@ -38,4 +41,11 @@ def main():
 
 
 if __name__ == "__main__":
+    torch.cuda.synchronize()
+    profiler.start()
     main()
+    torch.cuda.synchronize()
+    profiler.stop()
+
+
+
